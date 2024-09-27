@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Burjal Hotel</title>
+	<link rel="stylesheet" type="text/css" href="Assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="custom.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet">
+
+</head>
+<body>
+	<div class="Content-Wrapper">
+<div class="container">
+	<div class="row d-flex justify-content-between">
+		<div class="col-auto d-md-flex pt-2">
+			<p class="">
+				<i class="fa-solid fa-phone mt-1"></i>
+				<span>(+92)0945-566789</span>
+			</p>
+            <p class="mx-3">
+            	<i class="fa-solid fa-envelope mt-1 "></i>
+				<span>info.xyz@gmail.com</span>
+			</p>
+		</div>
+			<div class="col-auto  pt-2 ">
+				<div class="social-link d-flex  ">
+					<a href="" class="">
+						<i class="fa-brands fa-facebook-f"></i>
+					</a>
+					<a href="">
+						<i class="fa-brands fa-instagram"></i>
+					</a>
+					<a href="">
+						<i class="fa-brands fa-linkedin-in"></i>
+					</a>
+					<a href="">
+						<i class="fa-brands fa-x-twitter"></i>
+					</a>
+				</div>		
+			</div>
+		</div>
+</div>
+<!-- Header end -->
+
+<!-- navbar start -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary slider-img">
+  <div class="container">
+    <img src="Images/p6.png" style="width: 15%; height: 20%">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class=" collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
+      <div class="mx-auto navbar-nav">
+        <a class="nav-link active ms-4 fw-semibold" aria-current="page" href="../new website/Ecommerce.html" target="blank">Home</a>
+        <a class="nav-link active ms-4 fw-semibold" aria-current="page" href="#">About Us</a>
+        <a class="nav-link active ms-4 fw-semibold" aria-current="page" href="#">Services</a>
+        <a class="nav-link active ms-4 fw-semibold" aria-current="page" href="#">Gallery</a>
+        <a class="nav-link active ms-4 fw-semibold" aria-current="page" href="#">Meeting & Events</a>
+        <a class="nav-link active ms-4 fw-semibold" aria-current="page" href="#">Facilities</a>
+
+
+        <a class="nav-link active ms-4 fw-semibold" aria-current="page" href="#">Contact Us</a
+        >
+      </div>
+    	<div class="col-md-2">
+            <button class="btn btn-primary ms-2 ">Booking Online</button>
+        </div>
+    </div>
+  </div>
+</nav>
+<!-- navbar end -->
+
+<!-- slider section start -->
+<section id="home">
+		<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+		  <div class="carousel-inner">
+		    <div class="carousel-item active img-1 w-100">
+		      <!-- <img src="" class="d-block img-1" alt="..."> -->
+		      <!-- <h1 class="stwus text-white text-center">Stay With Us</h1> -->
+		    </div>
+		    <div class="carousel-item img-2 w-100">
+		      <!-- <img src="..." class="d-block w-100 img-2" alt="..."> -->
+		      <h1 class="stwus text-white text-center">Stay With Us</h1>
+		    </div>
+		    <div class="carousel-item img-3 w-100">
+		      <!-- <img src="..." class="d-block w-100 img-3" alt="..."> -->
+		      <h1 class="stwus text-white text-center">Stay With Us</h1>
+		    </div>
+		  </div>
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Previous</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Next</span>
+		  </button>
+		</div>
+	</div>
+	
+</section>
+
+
+<!-- slider section end -->
+
+<!-- counter section start -->
+
+<div class="container-fluid booking pb-5 wow fadeIn position-absolute top-80 start-50 translate-middle" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+    <div class="container">
+        <div class="bg-white shadow" style="padding: 35px;">
+            <div class="row g-2">
+                <div class="col-md-10">
+                    <div class="row g-2">
+                        <!-- Check In Date -->
+                        <div class="col-md-3">
+                            <div class="date" id="date1" data-target-input="nearest">
+                                <input type="text" class="form-control datetimepicker-input" id="checkInDate" placeholder="Check in" data-target="#date1">
+                            </div>
+                        </div>
+                        <!-- Check Out Date -->
+                        <div class="col-md-3">
+                            <div class="date" id="date2" data-target-input="nearest">
+                                <input type="text" class="form-control datetimepicker-input" id="checkOutDate" placeholder="Check out" data-target="#date2">
+                            </div>
+                        </div>
+                        <!-- Adults Selection -->
+                        <div class="col-md-3">
+                            <select class="form-select" id="adults">
+                                <option selected="">Adult</option>
+                                <option value="1">Adult 1</option>
+                                <option value="2">Adult 2</option>
+                                <option value="3">Adult 3</option>
+                            </select>
+                        </div>
+                        <!-- Children Selection -->
+                        <div class="col-md-3">
+                            <select class="form-select" id="children">
+                                <option selected="">Child</option>
+                                <option value="1">Child 1</option>
+                                <option value="2">Child 2</option>
+                                <option value="3">Child 3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- Submit Button -->
+                <div class="col-md-2">
+                    <button class="btn btn-primary w-100" id="submitButton">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+     <!-- counter section end -->
+
+ <!-- section about us start-->
+
+<div class="container About_us d-flex flex-wrap mt-5 ">
+    <div class="row w-100">
+        <div class="col-md-6 mt-md-0 mt-5">
+            <h4 class="text-center text-dark fw-semibold mt-5 About-us ">About Us</h4>
+            <h2 class="text-center mt-3 text-dark fw-semibold">Welcome to Burjal</h2>
+            <p class="paragraph-about-Welcome py-3  px-4 text-dark">
+                Welcome to [Hotel Name], your perfect home away from home located in the heart of [City/Location]. Since our establishment in [Year], we have been committed to providing unparalleled hospitality and exceptional service to our guests. Our beautifully appointed rooms and suites are designed with your comfort in mind, featuring modern amenities and stunning views of [Local Landmark/Scenery]. Whether you're here for business or leisure, our range of facilities, including an on-site restaurant, spa, fitness center, and versatile meeting spaces, ensure a memorable and enjoyable stay. We look forward to welcoming you and making your stay with us unforgettable.
+            </p>
+        </div>
+        <div class="col-md-6 d-flex align-items-center justify-content-center">
+            <video controls class="video1">
+                <source src="images/video-1.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</div>
+    <!-- section about us end-->
+
+   <!-- Our Room section start -->
+   <div class="container d-flex flex-wrap bg-body-tertiary Our-Sec">
+   	<h1 class="Our-Room mt-3">Our Room</h1>
+   	<span class="U-line-1 text-center"></span>
+   	<span class="U-line-2 text-center"></span>
+   	<div class="row">	
+	<div class="row row-cols-1 row-cols-md-3 g-4 ms-2">
+	  <div class="col">
+	    <div class="card shadow">
+	    	<div class="inner">
+	    		<img src="Images/62.jpg" class="card-img-top" alt="...">
+	    	</div>
+	      <div class="card-body">
+	        <h3 class="card-1 text-center">Single Room</h3>
+	        <p class="card-1b text-center text-dark mb-4 fs-5">$120<span class="text-secondary">/per night</span></p>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col">
+	    <div class="card shadow">
+	    	<div class="inner">
+	      <img src="Images/64.jpg" class="card-img-top" alt="...">
+	    	</div>
+	      <div class="card-body">
+	        <h4 class="card-1 text-center  fs-3">Double Room</h4>
+	        <p class="card-1b text-center text-dark mb-4 fs-5">$120<span class="text-secondary">/per night</span></p>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col">
+	    <div class="card shadow">
+	    	<div class="inner">
+	    		<img src="Images/63.jpg" class="card-img-top" alt="...">
+	    	</div>
+	      <div class="card-body">
+	        <h4 class="card-1 text-center fs-3">Deluxe Room</h4>
+	        <p class="card-1b text-center text-dark mb-4 fs-5">$120<span class="text-secondary">/per night</span></p>
+	      </div>
+	    </div>
+	  </div>
+	 <div class="col">
+	    <div class="card shadow">
+	    	<div class="inner">
+	    		<img src="Images/62.jpg" class="card-img-top" alt="...">
+	    	</div>
+	      <div class="card-body">
+	        <h4 class="card-1 text-center  fs-3">Classic Room</h4>
+	        <p class="card-1b text-center text-dark mb-4  fs-5">$120<span class="text-secondary">/per night</span></p>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col">
+	    <div class="card shadow">
+	    	<div class="inner">
+	    		<img src="Images/64.jpg" class="card-img-top" alt="...">
+	    	</div>
+	      <div class="card-body">
+	        <h4 class="card-1 text-center  fs-3">Superior Room </h4>
+	        <p class="card-1b text-center text-dark mb-4  fs-5">$120<span class="text-secondary">/per night</span></p>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col">
+	    <div class="card shadow">
+	    	<div class="inner">
+	    		<img src="Images/63.jpg" class="card-img-top" alt="...">
+	    	</div>
+	      <div class="card-body">
+	        <h4 class="card-1 text-center  fs-3">Luxury Room</h4>
+	        <p class="card-1b text-center text-dark mb-4  fs-5">$120<span class="text-secondary">/per night</span></p>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+   	</div>
+   </div>
+   <!-- Our Room section end -->
+   <!-- Our Services Section start -->
+   <div class="container bg-body-tertiary mt-5">
+   	<h1 class="Our-Services text-center mt-5">Our Services</h1>
+   	<div class="row">
+   		<!-- wifi icon div start -->
+  <div class="col-sm-4 mb-3 mb-sm-0 ">
+    <div class="card">
+      <div class="card-body">
+      	<div class="div-circle bg-secondary rounded-circle">
+      	<i class="fa-solid fa-wifi "></i>
+      </div>
+        <h3 class="Free-wifi">Free Wi-Fi</h3>
+        <p class="card-text">At [Burjal], we understand the importance of staying connected. That's why we offer complimentary high-speed Wi-Fi throughout the hotel.</p>
+      </div>
+    </div>
+  </div>
+  <!-- wifi icon end -->
+   <div class="col-sm-4 mb-3 mb-sm-0 ">
+    <div class="card">
+      <div class="card-body">
+      	<div class="div-circle bg-secondary rounded-circle">
+      	<!-- <i class="fa-solid fa-wifi "></i> -->
+      	<img src="Images/P-car-image11.png" class="car-img2">
+      </div>
+        <h3 class="Free-wifi">Free Wi-Fi</h3>
+        <p class="card-text">At [Burjan], we understand the importance of staying connected. That's why we offer complimentary high-speed Wi-Fi throughout the hotel.</p>
+      </div>
+    </div>
+  </div>
+<div class="col-sm-4 mb-3 mb-sm-0 ">
+    <div class="card">
+      <div class="card-body">
+      	<div class="div-circle bg-secondary rounded-circle">
+      	<!-- <i class="fa-solid fa-wifi "></i> -->
+      	<img src="Images/P-car-image11.png" class="car-img2">
+      </div>
+        <h3 class="Free-wifi">Free Wi-Fi</h3>
+        <p class="card-text">At [Burjan], we understand the importance of staying connected. That's why we offer complimentary high-speed Wi-Fi throughout the hotel. </p>
+      </div>
+    </div>
+  </div><div class="col-sm-4 mb-3 mb-sm-0 ">
+    <div class="card">
+      <div class="card-body">
+      	<div class="div-circle bg-secondary rounded-circle">
+      	<!-- <i class="fa-solid fa-wifi "></i> -->
+      	<img src="Images/P-car-image11.png" class="car-img2">
+      </div>
+        <h3 class="Free-wifi">Free Wi-Fi</h3>
+        <p class="card-text">At [Burjan], we understand the importance of staying connected. That's why we offer complimentary high-speed Wi-Fi throughout the hotel. </p>
+      </div>
+    </div>
+  </div><div class="col-sm-4 mb-3 mb-sm-0 ">
+    <div class="card">
+      <div class="card-body">
+      	<div class="div-circle bg-secondary rounded-circle">
+      	<!-- <i class="fa-solid fa-wifi "></i> -->
+      	<img src="Images/P-car-image11.png" class="car-img2">
+      </div>
+        <h3 class="Free-wifi">Free Wi-Fi</h3>
+        <p class="card-text">At [Burjan], we understand the importance of staying connected. That's why we offer complimentary high-speed Wi-Fi throughout the hotel..</p>
+      </div>
+    </div>
+  </div>
+ <div class="col-sm-4 mb-3 mb-sm-0 ">
+    <div class="card">
+      <div class="card-body">
+      	<div class="div-circle bg-secondary rounded-circle">
+      	<!-- <i class="fa-solid fa-wifi "></i> -->
+      	<img src="Images/laundry.png" class="laundry-img">
+      </div>
+        <h3 class="Free-wifi">Free Wi-Fi</h3>
+        <p class="card-text">At [Burjan], we understand the importance of staying connected. That's why we offer complimentary high-speed Wi-Fi throughout the hotel.</p>
+      </div>
+    	</div>
+  	</div>
+</div>
+   <!-- Our Services Section End -->
+
+   <!-- What Customer Say start -->
+   <div class="container">
+   	<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <!-- <img src="..." class="d-block w-100" alt="..."> -->
+      <h1 class="text-center text-dark mt-5 text-align-justify">What Customer Say</h1>
+      <h1 class="text-center mt-4">Mr.Jones</h1>
+      <div class="Customer-feedback">
+      	<p class=" mt-3">Our guests consistently praise us for our exceptional service and welcoming atmosphere. They love the comfort and cleanliness of our rooms, the delicious dining options, and the convenience of our central location. Many of our visitors highlight the friendliness and professionalism of our staff, making their stay truly memorable. With numerous positive reviews, [Burjal] has become a favorite choice for travelers seeking a home away from home.</p>
+      </div>
+      
+    </div>
+    <div class="carousel-item">
+      <!-- <img src="..." class="d-block w-100" alt="..."> -->
+      <h1 class="text-center text-dark mt-5 text-align-justify">What Customer Say</h1>
+      <h1 class="text-center mt-4">David John</h1>
+        <div class="Customer-feedback">
+      	<p class=" mt-3">Our guests consistently praise us for our exceptional service and welcoming atmosphere. They love the comfort and cleanliness of our rooms, the delicious dining options, and the convenience of our central location. Many of our visitors highlight the friendliness and professionalism of our staff, making their stay truly memorable. With numerous positive reviews, [Burjal] has become a favorite choice for travelers seeking a home away from home.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <!-- <img src="..." class="d-block w-100" alt="..."> -->
+      <h1 class="text-center text-dark mt-5 text-align-justify">What Customer Say</h1>
+      <h1 class="text-center mt-4">Thomas</h1>
+        <div class="Customer-feedback">
+      	<p class=" mt-3">Our guests consistently praise us for our exceptional service and welcoming atmosphere. They love the comfort and cleanliness of our rooms, the delicious dining options, and the convenience of our central location. Many of our visitors highlight the friendliness and professionalism of our staff, making their stay truly memorable. With numerous positive reviews, [Burjal] has become a favorite choice for travelers seeking a home away from home.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+   </div>
+   <!-- What Customer Say end -->
+   <!-- Our Leadership start -->
+   <div class="container py-5">
+   	<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card">
+      <img src="Images/Manager.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title text-center">General Manager</h4>
+        <h5 class="card-title text-center text-secondary">Thomas Jones</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+       <img src="Images/Director of Operation.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title text-center">Director of Operation</h4>
+        <h5 class="card-title text-center text-secondary">Gold Smith</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="Images/Director of sale.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center">Director of sale and Marketing</h5>
+        <h5 class="card-title text-center text-secondary">Thomas Jones</h5>
+      </div>
+    </div>
+  </div>
+    <div class="col">
+    <div class="card">
+      <img src="Images/Executive Chef.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title text-center">Executive Chief</h4>
+        <h5 class="card-title text-center text-secondary">Allen Parker</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+       <img src="Images/Director of Operation.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title text-center">Director of Operation</h4>
+        <h5 class="card-title text-center text-secondary">Gold Smith</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="Images/Director of Food and Beverage.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center">Director of Food and Beverage</h5>
+        <h5 class="card-title text-center text-secondary">Thomas Jones</h5>
+      </div>
+    </div>
+  </div>
+   </div>
+</div>
+   <!-- Our LeaderShip end -->
+
+   <!-- Footer Start -->
+
+   <footer class="footer bg-dark">
+    <div class="container">
+      <div class="row">
+        <!-- About Us Section -->
+        <div class="col-md-3 col-sm-6 footer-section">
+          <h4 class="text-white">About Us</h4>
+          <p class="text-white ">Welcome to Burjal, your perfect home away from home located in the heart of Peshawar.</p>
+        </div>
+        <!-- Quick Links Section -->
+        <div class="col-md-3 col-sm-6 footer-section">
+          <h4 class="text-white">Quick Links</h4>
+          <a href="#">Home</a><br>
+          <a href="#">Rooms</a><br>
+          <a href="#">Dining</a><br>
+          <a href="#">Contact Us</a>
+        </div>
+        <!-- Contact Information Section -->
+        <div class="col-md-3 col-sm-6 footer-section">
+          <h4 class="text-white">Contact Us</h4>
+          <p><strong>Address:</strong> 123 Main Street, [City], [Country]</p>
+          <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+          <p><strong>Email:</strong> info@Burjalhotel.com</p>
+        </div>
+        <!-- Follow Us Section -->
+        <div class="col-md-3 col-sm-6 footer-section">
+          <h4 class="text-white">Follow Us</h4>
+          <a href="#"><i class="glyphicon glyphicon-facebook"></i> Facebook</a><br>
+          <a href="#"><i class="glyphicon glyphicon-twitter"></i> Twitter</a><br>
+          <a href="#"><i class="glyphicon glyphicon-instagram"></i> Instagram</a><br>
+          <a href="#"><i class="glyphicon glyphicon-linkedin"></i> LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+   <!-- Footer end -->
+
+   </div>
+<script>
+    document.getElementById('adult-plus').addEventListener('click', function() {
+        var adults = document.getElementById('adults');
+        if (parseInt(adults.value) < 10) {
+            adults.value = parseInt(adults.value) + 1;
+        }
+    });
+
+    document.getElementById('adult-minus').addEventListener('click', function() {
+        var adults = document.getElementById('adults');
+        if (parseInt(adults.value) > 1) {
+            adults.value = parseInt(adults.value) - 1;
+        }
+    });
+
+    document.getElementById('children-plus').addEventListener('click', function() {
+        var children = document.getElementById('children');
+        if (parseInt(children.value) < 10) {
+            children.value = parseInt(children.value) + 1;
+        }
+    });
+
+    document.getElementById('children-minus').addEventListener('click', function() {
+        var children = document.getElementById('children');
+        if (parseInt(children.value) > 0) {
+            children.value = parseInt(children.value) - 1;
+        }
+    });
+
+    document.getElementById('rooms-plus').addEventListener('click', function() {
+        var rooms = document.getElementById('rooms');
+        if (parseInt(rooms.value) < 10) {
+            rooms.value = parseInt(rooms.value) + 1;
+        }
+    });
+
+    document.getElementById('rooms-minus').addEventListener('click', function() {
+        var rooms = document.getElementById('rooms');
+        if (parseInt(rooms.value) > 1) {
+            rooms.value = parseInt(rooms.value) - 1;
+        }
+    });
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="Assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#checkInDate').datepicker({
+            format: 'mm/dd/yyyy',
+            autoclose: true,
+            todayHighlight: true
+        });
+
+        $('#checkOutDate').datepicker({
+            format: 'mm/dd/yyyy',
+            autoclose: true,
+            todayHighlight: true
+        });
+    });
+</script>
+</body>
+</html>

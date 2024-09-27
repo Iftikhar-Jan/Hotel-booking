@@ -1,0 +1,207 @@
+.Content-Wrapper{
+	overflow: hidden;
+}
+
+.social-link{
+}
+.social-link a{
+	font-size: 17px;
+	height: 35px;
+	width: 35px;
+	border-radius: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	margin-left: 5px;
+	text-decoration: none;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+.logo-1{
+	width: 80%;
+	height: 80%;
+}
+.img-1{
+	background-image: url(Images/p26.jpg);
+	height: 600px;
+	width: 100%;
+	background-repeat:no-repeat;
+	background-position: center;
+	background-size: cover;
+
+}
+.img-2{
+	background-image: url(Images/p22.png);
+	height: 600px;
+	width: 100%;
+	background-repeat:no-repeat;
+	background-position: center;
+	background-size: cover;
+
+}
+.img-3{
+	background-image: url(Images/p25.jpg);
+	height: 600px;
+	width: 100%;
+	background-repeat:no-repeat;
+	background-position: center;
+	background-size: cover;
+	opacity: 0.6;
+}
+.stwus{
+	font-size: 120px;
+/*	opacity: 0.9;*/
+	margin-top: 300px;
+}
+.slider-img{
+	position: relative;
+}
+.counter-1{
+	position: absolute;
+	margin-top: -300px;
+}
+.About-us {
+    margin-top: 10%;
+    font-family: Roman;
+}
+.paragraph-about-Welcome {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+}
+.video1 {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+@media (max-width: 767px) {
+.About_us {
+    padding: 20px 10px;
+}
+.paragraph-about-Welcome {
+    font-size: 14px;
+ }
+}
+.Our-Sec{
+	margin-top: 40px;
+}
+.Our-Room{
+	margin-left: 42%;
+	font-size: 38px;
+	font-family:Roman;
+}
+.U-line-1{
+	width: 200px;
+	height: 3px;
+	background-color: seagreen;
+	display: inline-block;
+	margin-top: -7px;
+	border-radius: 50%;
+	margin-left: 40%;
+	margin-bottom: 20px;
+}
+.U-line-2{
+	width: 160px;
+	height: 3px;
+	background-color: orangered;
+	display: inline-block;
+	margin-top: -16px;
+	border-radius: 50%;
+	margin-left: 43%;
+}
+.card-1:hover{
+	font-family: calibri;
+	color: goldenrod;
+
+}
+.card-1b{
+	font-family: calibri;
+	color: gray;
+	height: 5px;
+}
+.inner {
+    overflow: hidden;
+}
+
+.card-img-top {
+    transition: transform 1.5s ease;
+    height: 300px;
+}
+
+.inner:hover .card-img-top {
+    transform: scale(1.5);
+}
+.fa-wifi{
+	font-size: 50px;
+	color: goldenrod;
+	margin-left: 18%;
+	margin-top: 20px;
+}
+.Free-wifi{
+	margin-left: 33%;
+	margin-top: 15px;
+	font-family: Roman;
+}
+.div-circle {
+	width: 90px;
+	height: 90px;
+	margin-left: 35%;
+}
+.fa-square-parking{
+	margin-top: 30px;
+	margin-left: 15px;
+	font-size: 25px;
+	color: white;
+}
+.car-img2{
+	width: 80px;
+	height: 80px;
+	margin-left: 10px;
+	margin-top: 5px;
+
+}
+.laundry-img{
+	width: 80px;
+	height: 80px;
+	margin-left: 5px;
+	margin-top: 3px;
+	font-size: 20px;
+}
+.Customer-feedback{
+	background-color: orangered;
+	width: 80%;
+	height: 100px;
+	text-align: justify;
+	text-align: center;
+	margin-left: 10%;
+	font-size: 20px;
+}
+.footer {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    border-top: 1px solid #e7e7e7;
+}
+.footer .footer-section {
+    margin-bottom: 20px;
+}
+.footer .footer-section h4 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.footer .footer-section p, .footer .footer-section a {
+    margin-bottom: 5px;
+    color: white;
+}
+.footer .footer-section a:hover {
+    color: goldenrod;
+    text-decoration: none;
+}
+.nav-link active:hover {
+	color: orangered;
+}
+
+
+
