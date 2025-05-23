@@ -168,12 +168,12 @@ a {
 }
 .Customer-feedback {
   /* background-color: orangered; */
-  width: 80%;
+  width: 90%;
   height: 100px;
   text-align: justify;
   text-align: center;
-  margin-left: 10%;
-  font-size: 20px;
+  margin-left: 8%;
+  font-size: 17px;
 }
 .footer {
   background-color: #f8f8f8;
